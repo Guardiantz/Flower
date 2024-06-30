@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>HAPPY BIRTHDAY</title>
+</head>
+
+<body>
+    <!-- Elemen audio dengan autoplay dan loop -->
+    <audio id="background-music" src="Bruno Mars (mp3cut.net).mp3"></audio>
+
+    <div class="greetings">
+        <!-- Teks ucapan -->
+        <span>H</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>O</span>
+
+
+    </div>
+
+    <div class="description" style="opacity: 0.7;">
+        <!-- Teks deskripsi -->
+        <span>I have something for you</span>
+    </div>
+
+    <div class="button">
+        <!-- Tombol untuk navigasi ke flower.html -->
+        <button id="flower-button" style="width:100px; height: 50px; border-radius: 10px; font-weight: 500;">
+            Click Here
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tambahkan event listener pada tombol
+            const flowerButton = document.getElementById('flower-button');
+
+            // Dapatkan elemen audio
+            const audio = document.getElementById('background-music');
+
+            flowerButton.addEventListener('click', function() {
+                // Arahkan ke flower.html saat tombol diklik
+                window.location.href = 'flower.html';
+            });
+        });
+    </script>
+</body>
+
+</html>
